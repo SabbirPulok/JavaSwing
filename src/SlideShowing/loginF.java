@@ -1,3 +1,5 @@
+package SlideShowing;
+
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
@@ -12,7 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-public class LoginDemo extends JFrame{
+public class loginF extends JFrame{
 
 	private Container c;
 	private ImageIcon icon;
@@ -23,14 +25,14 @@ public class LoginDemo extends JFrame{
 	private Font f;
 	
 	
-	LoginDemo(){
+	loginF(){
 		initDemo();
 	}
 	
 	public void initDemo()
 	{
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setBounds(100,50,400,400);
+		this.setBounds(150,80,400,400);
 		this.setTitle("Login Demo");
 		this.setResizable(false);
 		
@@ -82,7 +84,7 @@ public class LoginDemo extends JFrame{
 				{
 					JOptionPane.showMessageDialog(null, "You are logged in.");
 					dispose();
-					AfterLogin frame = new AfterLogin();
+					Home frame = new Home();
 					frame.setVisible(true);
 				}
 				else
@@ -118,7 +120,7 @@ public class LoginDemo extends JFrame{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		LoginDemo frame = new LoginDemo();
+		loginF frame = new loginF();
 		frame.setVisible(true);
 
 	}
